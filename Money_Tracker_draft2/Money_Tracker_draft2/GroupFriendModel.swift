@@ -1,0 +1,55 @@
+//
+//  GroupFriendModel.swift
+//  Money_Tracker_draft2
+//
+//  Created by Da Shen on 11/11/14.
+//  Copyright (c) 2014 UIUC. All rights reserved.
+//
+
+var groupFriendInstance1: GroupFriendModel = GroupFriendModel()
+
+struct People {
+    var Name:String = "No-name"
+    var Balance:Int = 0
+}
+
+struct Group {
+    var Name:String = "No-name"
+    var numOfPeople:Int = 0
+    //var peopleList:[People] = {}
+}
+
+import UIKit
+
+class GroupFriendModel: NSObject {
+    
+    var friendList = [People]()
+    var groupList = [Group]()
+    
+    func initGroupList() {
+        var g1 = Group(Name: "Apt 3", numOfPeople: 3)
+        var g2 = Group(Name: "CS465 Group", numOfPeople: 5)
+        groupList =  [g1,g2]
+    }
+    
+    func initFriendList() {
+        var f1 = People(Name: "Diego", Balance: 0)
+        var f2 = People(Name: "James", Balance: 0)
+        var f3 = People(Name: "Jim", Balance: 0)
+        var f4 = People(Name: "Bei", Balance: 0)
+        var f5 = People(Name: "Da", Balance: 0)
+        var f6 = People(Name: "Chi-Hsien", Balance: 0)
+        var f7 = People(Name: "Tiffany", Balance: 0)
+        
+        friendList =  [f1,f2,f3,f4,f5,f6,f7]
+    }
+    
+    
+    func addFriend(name:String, balance:Int) {
+        friendList.append(People(Name: name, Balance: 0))
+    }
+   
+    func addGroup(name:String, numOfPeople:Int) {
+        groupList.append(Group(Name: name, numOfPeople: numOfPeople))
+    }
+}
