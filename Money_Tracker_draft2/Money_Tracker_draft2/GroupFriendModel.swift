@@ -16,7 +16,7 @@ struct People {
 struct Group {
     var Name:String = "No-name"
     var numOfPeople:Int = 0
-    //var peopleList:[People] = {}
+    var peopleList:[People] = []
 }
 
 import UIKit
@@ -27,10 +27,10 @@ class GroupFriendModel: NSObject {
     var groupList = [Group]()
     
     func initGroupList() {
-        var g1 = Group(Name: "Apt 3", numOfPeople: 3)
-        var g2 = Group(Name: "CS465 Group", numOfPeople: 5)
-        groupList =  [g1,g2]
-    }
+        var g1 = Group(Name: "Apt 3", numOfPeople: 3, peopleList:[People(Name: "Cory", Balance: 0),People(Name: "James", Balance: 0),People(Name: "Jim", Balance: 0)])
+        var g2 = Group(Name: "CS465 Group", numOfPeople: 5, peopleList: [People(Name: "Cory", Balance: 0),People(Name: "Diego", Balance: 0),People(Name: "Bei", Balance: 0),People(Name: "Da", Balance: 0),People(Name: "Chi-Hsien", Balance: 0)])
+        var g3 = Group(Name: "Myself(Personal Bill)", numOfPeople: 1, peopleList: [People(Name: "Cory", Balance: 0)])
+        groupList =  [g1,g2]    }
     
     func initFriendList() {
         var f1 = People(Name: "Diego", Balance: 0)
@@ -50,6 +50,29 @@ class GroupFriendModel: NSObject {
     }
    
     func addGroup(name:String, numOfPeople:Int) {
-        groupList.append(Group(Name: name, numOfPeople: numOfPeople))
+        groupList.append(Group(Name: name, numOfPeople: numOfPeople, peopleList: []))
     }
+    
+    func addFriendToGroup(nameOfPerson:String, nameOfGroup:String) -> Bool {
+        var targetIndex:Int! = -1
+        var counter = 0
+        
+        for group in groupList {
+            if group.Name == nameOfGroup {
+                targetIndex = counter
+            }
+            counter++
+        }
+        
+        // when the group is found
+        if (targetIndex != -1) {
+            groupList[targetIndex].peopleList.append(People(Name: nameOfPerson, Balance: 0))
+            
+            return true
+        }
+        
+        return false
+        
+    }
+
 }
