@@ -28,7 +28,7 @@ class ProfileFriendsViewController: UIViewController,UITableViewDelegate, UITabl
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell: UITableViewCell = UITableViewCell(style: UITableViewCellStyle.Value1, reuseIdentifier: "friend_cell")
         
-        cell.textLabel.text = groupFriendInstance1.friendList[indexPath.row].Name
+        cell.textLabel!.text = groupFriendInstance1.friendList[indexPath.row].Name
         cell.detailTextLabel!.text = "$" + String(groupFriendInstance1.friendList[indexPath.row].Balance)
         
         return cell

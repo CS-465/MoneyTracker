@@ -60,12 +60,12 @@ class AnalysisTableViewController: UITableViewController {
         cellForRowAtIndexPath indexPath: NSIndexPath)
         -> UITableViewCell {
             let cell = UITableViewCell(style:UITableViewCellStyle.Value1, reuseIdentifier:"Cell")
-            cell.textLabel.text = self.sectionArray[indexPath.section].item[indexPath.row]
+            cell.textLabel!.text = self.sectionArray[indexPath.section].item[indexPath.row]
             var tmp=self.sectionArray[indexPath.section].cost[indexPath.row]
             if( cell.detailTextLabel != nil){
                 cell.detailTextLabel!.text=tmp
             }
-            cell.imageView.image = UIImage(named: self.images[self.sectionArray[indexPath.section].category[indexPath.row]])
+            cell.imageView!.image = UIImage(named: self.images[self.sectionArray[indexPath.section].category[indexPath.row]])
             return cell
     }
     

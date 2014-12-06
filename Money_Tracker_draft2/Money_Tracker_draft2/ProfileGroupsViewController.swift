@@ -32,7 +32,7 @@ class ProfileGroupsViewController: UIViewController, UITableViewDelegate, UITabl
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell: UITableViewCell = UITableViewCell(style: UITableViewCellStyle.Value1, reuseIdentifier: "group_cell")
         
-        cell.textLabel.text = groupFriendInstance1.groupList[indexPath.row].Name
+        cell.textLabel!.text = groupFriendInstance1.groupList[indexPath.row].Name
         cell.detailTextLabel!.text = String(groupFriendInstance1.groupList[indexPath.row].numOfPeople) + " members"
         
         return cell
@@ -66,7 +66,7 @@ class ProfileGroupsViewController: UIViewController, UITableViewDelegate, UITabl
         override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
             
             let cell: UITableViewCell = UITableViewCell(style: UITableViewCellStyle.Value1, reuseIdentifier: "group_member_cell")
-            cell.textLabel.text = groupFriendInstance1.groupList[groupIndexPassed].peopleList[indexPath.row].Name
+            cell.textLabel!.text = groupFriendInstance1.groupList[groupIndexPassed].peopleList[indexPath.row].Name
             cell.detailTextLabel!.text = "$ " + String(groupFriendInstance1.groupList[groupIndexPassed].peopleList[indexPath.row].Balance)
             
             return cell
