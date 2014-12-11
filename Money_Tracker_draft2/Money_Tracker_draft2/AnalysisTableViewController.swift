@@ -34,7 +34,7 @@ class AnalysisTableViewController: UITableViewController {
             var s3=Sections(header: "Nov 8", item: ["Gas"], category: [3], cost: ["$ 20.00"])
             var s4=Sections(header: "Nov 5", item: ["American Eagle"], category: [1], cost: ["$ 70.00"])
             var s5=Sections(header: "Nov 1", item: ["Grocery"], category: [2], cost: ["$ 15.00"])
-            var s6=Sections(header: "Oct 28", item: ["Apartment"], category: [4], cost: ["$ 400.00"])
+            var s6=Sections(header: "Oct 28", item: ["Apt Rent"], category: [4], cost: ["$ 300.00"])
             var s = [s1,s2,s3,s4,s5,s6]
             return s
             

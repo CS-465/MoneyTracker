@@ -46,7 +46,7 @@ class InputBillViewController: UIViewController, UITextFieldDelegate {
         
         billnew.Title = Name.text
         billnew.Money = Total.text.toInt()!
-        addBill()
+        billList.addBill()
         self.performSegueWithIdentifier("toSummary", sender: self)
     }
     /*

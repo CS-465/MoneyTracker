@@ -8,11 +8,9 @@
 
 var groupFriendInstance1: GroupFriendModel = GroupFriendModel()
 
-var bill1 = Bill(Title: "Grocery",  GroupIndex:0,Money:45,CategoryIndex:2)
-var bill2 = Bill(Title: "Apt rent", GroupIndex:0, Money:800,CategoryIndex:4)
-var bill3 = Bill(Title: "Gas", GroupIndex:1, Money:120,CategoryIndex:3)
-var billnew = Bill(Title: "new", GroupIndex:0, Money:0,CategoryIndex:0)
-var billList = [bill1,bill2,bill3]
+var billnew = Bill(Title: "new", GroupIndex:0, Money:0,CategoryIndex:0,Time:"Today")
+var billList:BillModel = BillModel()
+
 
 var images=["food_30.png","clothes_30.png","grocery_30.png","gas_station_30.png","home_30.png"]
 
@@ -21,6 +19,7 @@ struct Bill {
     var GroupIndex:Int
     var Money:Int
     var CategoryIndex:Int
+    var Time:String
 }
 
 struct People {
@@ -35,6 +34,21 @@ struct Group {
 }
 
 import UIKit
+
+class BillModel: NSObject {
+
+        var billList = [Bill]()
+    func initBillModel(){
+        var bill1 = Bill(Title: "Grocery",  GroupIndex:0,Money:45,CategoryIndex:2,Time:"Nov 1")
+        var bill2 = Bill(Title: "Apt rent", GroupIndex:0, Money:900,CategoryIndex:4,Time:"Oct 28")
+        var bill3 = Bill(Title: "Gas", GroupIndex:1, Money:100,CategoryIndex:3,Time:"Nov 8")
+        billList = [bill1,bill2,bill3]
+    }
+    
+    func addBill(){
+        billList.append(billnew)
+    }
+}
 
 class GroupFriendModel: NSObject {
     
@@ -92,6 +106,3 @@ class GroupFriendModel: NSObject {
 
 }
 
-func addBill(){
-    billList.append(billnew)
-}
