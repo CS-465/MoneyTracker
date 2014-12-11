@@ -43,11 +43,25 @@ class InputBillViewController: UIViewController, UITextFieldDelegate {
     }
 
     @IBAction func buttonCompleteTouched(sender: UIButton) {
-        
-        billnew.Title = Name.text
-        billnew.Money = Total.text.toInt()!
-        billList.addBill()
-        self.performSegueWithIdentifier("toSummary", sender: self)
+        var name:NSString = Name.text
+        var total:NSString = Total.text
+        if(name.isEqualToString("") || total.isEqualToString(""))
+        {
+            var alerView:UIAlertView = UIAlertView()
+            alerView.title = "Add Bill Failed!"
+            alerView.message = "Please enter Title and Total Money"
+            alerView.delegate = self
+            alerView.addButtonWithTitle("OK")
+            alerView.show()
+        }
+        else
+        {
+            billnew.Title = Name.text
+            billnew.Money = Total.text.toInt()!
+            billnew.GroupIndex = selectedGroupIndex - 1
+            billList.addBill()
+            self.performSegueWithIdentifier("toSummary", sender: self)
+        }
     }
     /*
     // MARK: - Navigation
