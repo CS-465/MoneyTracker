@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E63D03B1A3A3FF6001BEA99 /* AddBillGroupSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E63D03A1A3A3FF6001BEA99 /* AddBillGroupSelectionViewController.swift */; };
 		92A517481A11CC21002FEE93 /* AddFriendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A517471A11CC21002FEE93 /* AddFriendViewController.swift */; };
 		92A5174A1A11CC2E002FEE93 /* AddGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A517491A11CC2E002FEE93 /* AddGroupViewController.swift */; };
 		92A517501A11EA67002FEE93 /* ProfileFriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A5174F1A11EA67002FEE93 /* ProfileFriendsViewController.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2E63D03A1A3A3FF6001BEA99 /* AddBillGroupSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddBillGroupSelectionViewController.swift; sourceTree = "<group>"; };
 		92A517471A11CC21002FEE93 /* AddFriendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddFriendViewController.swift; sourceTree = "<group>"; };
 		92A517491A11CC2E002FEE93 /* AddGroupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddGroupViewController.swift; sourceTree = "<group>"; };
 		92A5174F1A11EA67002FEE93 /* ProfileFriendsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileFriendsViewController.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				92A517491A11CC2E002FEE93 /* AddGroupViewController.swift */,
 				92A5174F1A11EA67002FEE93 /* ProfileFriendsViewController.swift */,
 				92A517511A11EA7D002FEE93 /* ProfileGroupsViewController.swift */,
+				2E63D03A1A3A3FF6001BEA99 /* AddBillGroupSelectionViewController.swift */,
 				92A517531A11ED09002FEE93 /* GroupFriendModel.swift */,
 				92A517551A11FF0A002FEE93 /* TempNaviViewController.swift */,
 			);
@@ -248,6 +251,7 @@
 				92A517541A11ED09002FEE93 /* GroupFriendModel.swift in Sources */,
 				92A517501A11EA67002FEE93 /* ProfileFriendsViewController.swift in Sources */,
 				92D52E561A116C2E002D8F81 /* ViewController.swift in Sources */,
+				2E63D03B1A3A3FF6001BEA99 /* AddBillGroupSelectionViewController.swift in Sources */,
 				92D52E761A11A1AD002D8F81 /* AnalysisTableViewController.swift in Sources */,
 				92A5174A1A11CC2E002FEE93 /* AddGroupViewController.swift in Sources */,
 				92D52E541A116C2E002D8F81 /* Money_Tracker_draft2.xcdatamodeld in Sources */,

@@ -59,13 +59,15 @@ class AnalysisTableViewController: UITableViewController {
     override func tableView(tableView: UITableView,
         cellForRowAtIndexPath indexPath: NSIndexPath)
         -> UITableViewCell {
-            let cell = UITableViewCell(style:UITableViewCellStyle.Value1, reuseIdentifier:"Cell")
+            var cell = UITableViewCell(style:UITableViewCellStyle.Value1, reuseIdentifier:"Cell")
             cell.textLabel!.text = self.sectionArray[indexPath.section].item[indexPath.row]
             var tmp=self.sectionArray[indexPath.section].cost[indexPath.row]
             if( cell.detailTextLabel != nil){
                 cell.detailTextLabel!.text=tmp
             }
             cell.imageView!.image = UIImage(named: self.images[self.sectionArray[indexPath.section].category[indexPath.row]])
+            //cell.selectionStyle = UITableViewCellSelectionStyleNone;
+            cell.userInteractionEnabled = false;
             return cell
     }
     
@@ -81,21 +83,19 @@ class AnalysisTableViewController: UITableViewController {
             return ""
     }
     
-    
-    
-    
+
     
     
     
     
     // Override to support editing the table view.
-    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-        if editingStyle == .Delete {
-            // Delete the row from the data source
-            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
-        }
-    }
-    
+//    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+//        if editingStyle == .Delete {
+//            // Delete the row from the data source
+//            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
+//        }
+//    }
+//    
     
     
     
