@@ -43,6 +43,11 @@ class InputBillViewController: UIViewController, UITextFieldDelegate {
     }
 
     @IBAction func buttonCompleteTouched(sender: UIButton) {
+        
+        billnew.Title = Name.text
+        billnew.Money = Total.text.toInt()!
+        addBill()
+        self.performSegueWithIdentifier("toSummary", sender: self)
     }
     /*
     // MARK: - Navigation
