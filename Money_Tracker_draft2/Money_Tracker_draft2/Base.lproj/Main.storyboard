@@ -1014,7 +1014,7 @@
         <!--View Controller-->
         <scene sceneID="UdB-bQ-dXA">
             <objects>
-                <viewController id="MbI-Ke-8kf" sceneMemberID="viewController">
+                <viewController id="MbI-Ke-8kf" customClass="ViewController" customModule="Money_Tracker_draft2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Efh-Ce-hbM"/>
                         <viewControllerLayoutGuide type="bottom" id="UgO-cQ-moJ"/>
@@ -1365,7 +1365,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Gas" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fmH-1p-lr5">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Bill Title" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fmH-1p-lr5">
                                 <rect key="frame" x="206" y="193" width="112" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -1379,7 +1379,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="$120" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tAS-og-P7n">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Total Money" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tAS-og-P7n">
                                 <rect key="frame" x="204" y="283" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -1685,11 +1685,11 @@
         <image name="swipe_up_down_241" width="241" height="478"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="lZF-7m-tbx"/>
-        <segue reference="Z8V-2W-iK2"/>
-        <segue reference="o9A-bZ-pfu"/>
-        <segue reference="GbO-Xi-q6Y"/>
+        <segue reference="4Dn-SL-2cG"/>
+        <segue reference="2Jr-Cq-PcJ"/>
         <segue reference="tls-l0-NeU"/>
+        <segue reference="o9A-bZ-pfu"/>
         <segue reference="Cbj-q1-rNY"/>
+        <segue reference="Z8V-2W-iK2"/>
     </inferredMetricsTieBreakers>
 </document>

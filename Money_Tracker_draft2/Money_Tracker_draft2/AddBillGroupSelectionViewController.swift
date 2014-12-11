@@ -45,6 +45,7 @@ class AddBillGroupSelectionViewController: UIViewController, UITableViewDelegate
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         selectedGroupIndex = indexPath.row
+        selectedGroupIndex = selectedGroupIndex+1
         
     }
     

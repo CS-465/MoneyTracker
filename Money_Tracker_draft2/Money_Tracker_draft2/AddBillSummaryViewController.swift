@@ -22,14 +22,14 @@ class AddBillSummaryViewController: UIViewController, UITableViewDelegate, UITab
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return groupFriendInstance1.groupList[billnew.GroupIdx].peopleList.count
+        return groupFriendInstance1.groupList[billnew.GroupIndex].peopleList.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell: UITableViewCell = UITableViewCell(style: UITableViewCellStyle.Value1, reuseIdentifier: "group_cell")
         
-        cell.textLabel!.text = groupFriendInstance1.groupList[billnew.GroupIdx].peopleList[indexPath.row].Name
-        cell.detailTextLabel!.text = "$ " + String(billnew.Money/groupFriendInstance1.groupList[billnew.GroupIdx].peopleList.count)
+        cell.textLabel!.text = groupFriendInstance1.groupList[billnew.GroupIndex].peopleList[indexPath.row].Name
+        cell.detailTextLabel!.text = "$ " + String(billnew.Money/groupFriendInstance1.groupList[billnew.GroupIndex].peopleList.count)
         
         return cell
     }
