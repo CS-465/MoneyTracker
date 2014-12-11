@@ -90,6 +90,6 @@ class GroupFriendModel: NSObject {
 
 }
 
-func addBill{
+func addBill(){
     billList.append(billnew)
 }
