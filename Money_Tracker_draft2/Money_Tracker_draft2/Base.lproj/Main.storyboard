@@ -1737,11 +1737,11 @@
         <image name="swipe_up_down_241" width="241" height="478"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="lZF-7m-tbx"/>
-        <segue reference="Z8V-2W-iK2"/>
+        <segue reference="TcM-GG-dkv"/>
+        <segue reference="GbO-Xi-q6Y"/>
         <segue reference="o9A-bZ-pfu"/>
-        <segue reference="2Jr-Cq-PcJ"/>
         <segue reference="tls-l0-NeU"/>
         <segue reference="Cbj-q1-rNY"/>
+        <segue reference="Z8V-2W-iK2"/>
     </inferredMetricsTieBreakers>
 </document>
