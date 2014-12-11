@@ -39,7 +39,6 @@ class AnalysisTableViewController: UITableViewController {
             return s
             
     }
-    var images=["food_30.png","clothes_30.png","grocery_30.png","gas_station_30.png","home_30.png"]
     
     
     
@@ -65,7 +64,7 @@ class AnalysisTableViewController: UITableViewController {
             if( cell.detailTextLabel != nil){
                 cell.detailTextLabel!.text=tmp
             }
-            cell.imageView!.image = UIImage(named: self.images[self.sectionArray[indexPath.section].category[indexPath.row]])
+            cell.imageView!.image = UIImage(named: images[self.sectionArray[indexPath.section].category[indexPath.row]])
             //cell.selectionStyle = UITableViewCellSelectionStyleNone;
             cell.userInteractionEnabled = false;
             return cell

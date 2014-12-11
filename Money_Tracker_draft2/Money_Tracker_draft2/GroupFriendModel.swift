@@ -8,17 +8,19 @@
 
 var groupFriendInstance1: GroupFriendModel = GroupFriendModel()
 
-var bill1 = Bill(Title: "Grocery",  GroupIndex:0,Money:45)
-var bill2 = Bill(Title: "Apt rent", GroupIndex:0, Money:800)
-var bill3 = Bill(Title: "Gas", GroupIndex:1, Money:120)
-var billnew = Bill(Title: "new", GroupName:"new", GroupIndex:0, Money:0)
+var bill1 = Bill(Title: "Grocery",  GroupIndex:0,Money:45,CategoryIndex:2)
+var bill2 = Bill(Title: "Apt rent", GroupIndex:0, Money:800,CategoryIndex:4)
+var bill3 = Bill(Title: "Gas", GroupIndex:1, Money:120,CategoryIndex:3)
+var billnew = Bill(Title: "new", GroupIndex:0, Money:0,CategoryIndex:0)
 var billList = [bill1,bill2,bill3]
+
+var images=["food_30.png","clothes_30.png","grocery_30.png","gas_station_30.png","home_30.png"]
 
 struct Bill {
     var Title:String
-    var GroupName:String
     var GroupIndex:Int
     var Money:Int
+    var CategoryIndex:Int
 }
 
 struct People {
