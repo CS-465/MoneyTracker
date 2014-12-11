@@ -1394,7 +1394,7 @@
                     <connections>
                         <outlet property="Name" destination="fmH-1p-lr5" id="ccN-gP-YWf"/>
                         <outlet property="Total" destination="tAS-og-P7n" id="7gI-5Q-fSC"/>
-                        <segue destination="oev-go-GW7" kind="presentation" id="67B-4K-gl4"/>
+                        <segue destination="oev-go-GW7" kind="presentation" identifier="toSummary" id="67B-4K-gl4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xij-bL-Fqg" userLabel="First Responder" sceneMemberID="firstResponder"/>
