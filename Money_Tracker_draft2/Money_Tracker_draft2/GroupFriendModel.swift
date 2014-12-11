@@ -8,6 +8,19 @@
 
 var groupFriendInstance1: GroupFriendModel = GroupFriendModel()
 
+var bill1 = Bill(Title: "Grocery",  GroupIndex:0,Money:45)
+var bill2 = Bill(Title: "Apt rent", GroupIndex:0, Money:800)
+var bill3 = Bill(Title: "Gas", GroupIndex:1, Money:120)
+var billnew = Bill(Title: "new", GroupName:"new", GroupIndex:0, Money:0)
+var billList = [bill1,bill2,bill3]
+
+struct Bill {
+    var Title:String
+    var GroupName:String
+    var GroupIndex:Int
+    var Money:Int
+}
+
 struct People {
     var Name:String = "No-name"
     var Balance:Int = 0
@@ -75,4 +88,8 @@ class GroupFriendModel: NSObject {
         
     }
 
+}
+
+func addBill{
+    billList.append(billnew)
 }
