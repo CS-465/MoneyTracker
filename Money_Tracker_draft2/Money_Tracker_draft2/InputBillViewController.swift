@@ -42,6 +42,8 @@ class InputBillViewController: UIViewController, UITextFieldDelegate {
         return true
     }
 
+    @IBAction func buttonCompleteTouched(sender: UIButton) {
+    }
     /*
     // MARK: - Navigation
 

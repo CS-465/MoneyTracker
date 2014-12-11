@@ -1344,7 +1344,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="oev-go-GW7" kind="show" id="mKR-Ek-lAs"/>
+                                    <action selector="buttonCompleteTouched:" destination="Cew-fe-vah" eventType="touchUpInside" id="8Xv-6z-Q2k"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Total: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HFe-wb-niM">
@@ -1394,6 +1394,7 @@
                     <connections>
                         <outlet property="Name" destination="fmH-1p-lr5" id="ccN-gP-YWf"/>
                         <outlet property="Total" destination="tAS-og-P7n" id="7gI-5Q-fSC"/>
+                        <segue destination="oev-go-GW7" kind="presentation" id="67B-4K-gl4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xij-bL-Fqg" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1736,11 +1737,11 @@
         <image name="swipe_up_down_241" width="241" height="478"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="4Dn-SL-2cG"/>
-        <segue reference="2Jr-Cq-PcJ"/>
+        <segue reference="lZF-7m-tbx"/>
+        <segue reference="Z8V-2W-iK2"/>
         <segue reference="o9A-bZ-pfu"/>
+        <segue reference="2Jr-Cq-PcJ"/>
         <segue reference="tls-l0-NeU"/>
         <segue reference="Cbj-q1-rNY"/>
-        <segue reference="Z8V-2W-iK2"/>
     </inferredMetricsTieBreakers>
 </document>
