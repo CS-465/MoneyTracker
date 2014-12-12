@@ -58,7 +58,7 @@ class InputBillViewController: UIViewController, UITextFieldDelegate {
         {
             billnew.Title = Name.text
             billnew.Money = Total.text.toInt()!
-            billnew.GroupIndex = selectedGroupIndex - 1
+            billnew.GroupIndex = selectedGroupIndex
             billList.addBill()
             self.performSegueWithIdentifier("toSummary", sender: self)
         }

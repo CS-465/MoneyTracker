@@ -11,6 +11,8 @@ var groupFriendInstance1: GroupFriendModel = GroupFriendModel()
 var billnew = Bill(Title: "new", GroupIndex:0, Money:0,CategoryIndex:0,Time:"Today")
 var billList:BillModel = BillModel()
 
+var username = "Cory Larson"
+
 
 var images=["food_30.png","clothes_30.png","grocery_30.png","gas_station_30.png","home_30.png"]
 
@@ -39,9 +41,9 @@ class BillModel: NSObject {
 
         var billList = [Bill]()
     func initBillModel(){
-        var bill1 = Bill(Title: "Grocery",  GroupIndex:0,Money:45,CategoryIndex:2,Time:"Nov 1")
-        var bill2 = Bill(Title: "Apt rent", GroupIndex:0, Money:900,CategoryIndex:4,Time:"Oct 28")
-        var bill3 = Bill(Title: "Gas", GroupIndex:1, Money:100,CategoryIndex:3,Time:"Nov 8")
+        var bill1 = Bill(Title: "Grocery",  GroupIndex:1,Money:45,CategoryIndex:2,Time:"Nov 1")
+        var bill2 = Bill(Title: "Apt rent", GroupIndex:1, Money:900,CategoryIndex:4,Time:"Oct 28")
+        var bill3 = Bill(Title: "Gas", GroupIndex:2, Money:100,CategoryIndex:3,Time:"Nov 8")
         billList = [bill1,bill2,bill3]
     }
     
@@ -56,10 +58,10 @@ class GroupFriendModel: NSObject {
     var groupList = [Group]()
     
     func initGroupList() {
-        var g1 = Group(Name: "Apt 3", numOfPeople: 3, peopleList:[People(Name: "Cory", Balance: 0),People(Name: "James", Balance: 0),People(Name: "Jim", Balance: 0)])
-        var g2 = Group(Name: "CS465 Group", numOfPeople: 5, peopleList: [People(Name: "Cory", Balance: 0),People(Name: "Diego", Balance: 0),People(Name: "Bei", Balance: 0),People(Name: "Da", Balance: 0),People(Name: "Chi-Hsien", Balance: 0)])
-        var g3 = Group(Name: "Myself(Personal Bill)", numOfPeople: 1, peopleList: [People(Name: "Cory", Balance: 0)])
-        groupList =  [g1,g2]    }
+        var g1 = Group(Name: "Apt 3", numOfPeople: 3, peopleList:[People(Name: "Myself", Balance: 0),People(Name: "James", Balance: 0),People(Name: "Jim", Balance: 0)])
+        var g2 = Group(Name: "CS465 Group", numOfPeople: 5, peopleList: [People(Name: "Myself", Balance: 0),People(Name: "Diego", Balance: 0),People(Name: "Bei", Balance: 0),People(Name: "Da", Balance: 0),People(Name: "Chi-Hsien", Balance: 0)])
+        var g3 = Group(Name: "Myself(Personal Bill)", numOfPeople: 1, peopleList: [People(Name: "Myself", Balance: 0)])
+        groupList =  [g3,g1,g2]    }
     
     func initFriendList() {
         var f1 = People(Name: "Diego", Balance: 0)

@@ -27,20 +27,20 @@ class AddBillGroupSelectionViewController: UIViewController, UITableViewDelegate
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return groupFriendInstance1.groupList.count + 1
+        return groupFriendInstance1.groupList.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell: UITableViewCell = UITableViewCell(style: UITableViewCellStyle.Value1, reuseIdentifier: "group_cell")
         
         if(indexPath.row == 0){
-            cell.textLabel!.text = "Myself (personal bill)"
+            cell.textLabel!.text = groupFriendInstance1.groupList[indexPath.row].Name
             cell.detailTextLabel!.text = ""
             cell.imageView!.image = UIImage(named:"star.png")
         }
         else{
-            cell.textLabel!.text = groupFriendInstance1.groupList[indexPath.row - 1].Name
-            cell.detailTextLabel!.text = String(groupFriendInstance1.groupList[indexPath.row - 1].numOfPeople) + " members"
+            cell.textLabel!.text = groupFriendInstance1.groupList[indexPath.row].Name
+            cell.detailTextLabel!.text = String(groupFriendInstance1.groupList[indexPath.row].numOfPeople) + " members"
         }
         return cell
     }
@@ -51,7 +51,6 @@ class AddBillGroupSelectionViewController: UIViewController, UITableViewDelegate
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         selectedGroupIndex = indexPath.row
-        selectedGroupIndex = selectedGroupIndex+1
         
     }
     

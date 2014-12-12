@@ -10,9 +10,13 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var profileName: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        profileName.text = username
         billList.initBillModel()
+        groupFriendInstance1.initFriendList()
+        groupFriendInstance1.initGroupList()
         // Do any additional setup after loading the view, typically from a nib.
     }
 

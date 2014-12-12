@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		2E63D03B1A3A3FF6001BEA99 /* AddBillGroupSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E63D03A1A3A3FF6001BEA99 /* AddBillGroupSelectionViewController.swift */; };
+		2E63D03F1A3A6E71001BEA99 /* BillListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E63D03E1A3A6E71001BEA99 /* BillListViewController.swift */; };
+		2E63D0431A3A758B001BEA99 /* BillPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E63D0421A3A758B001BEA99 /* BillPageViewController.swift */; };
+		2E63D0491A3A91B8001BEA99 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E63D0481A3A91B8001BEA99 /* ProfileViewController.swift */; };
 		92A517481A11CC21002FEE93 /* AddFriendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A517471A11CC21002FEE93 /* AddFriendViewController.swift */; };
 		92A5174A1A11CC2E002FEE93 /* AddGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A517491A11CC2E002FEE93 /* AddGroupViewController.swift */; };
 		92A517501A11EA67002FEE93 /* ProfileFriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A5174F1A11EA67002FEE93 /* ProfileFriendsViewController.swift */; };
@@ -39,6 +42,9 @@
 
 /* Begin PBXFileReference section */
 		2E63D03A1A3A3FF6001BEA99 /* AddBillGroupSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddBillGroupSelectionViewController.swift; sourceTree = "<group>"; };
+		2E63D03E1A3A6E71001BEA99 /* BillListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BillListViewController.swift; sourceTree = "<group>"; };
+		2E63D0421A3A758B001BEA99 /* BillPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BillPageViewController.swift; path = ../BillPageViewController.swift; sourceTree = "<group>"; };
+		2E63D0481A3A91B8001BEA99 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		92A517471A11CC21002FEE93 /* AddFriendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddFriendViewController.swift; sourceTree = "<group>"; };
 		92A517491A11CC2E002FEE93 /* AddGroupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddGroupViewController.swift; sourceTree = "<group>"; };
 		92A5174F1A11EA67002FEE93 /* ProfileFriendsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileFriendsViewController.swift; sourceTree = "<group>"; };
@@ -112,6 +118,7 @@
 				92D52E751A11A1AD002D8F81 /* AnalysisTableViewController.swift */,
 				92D52E771A11B47A002D8F81 /* InputBillViewController.swift */,
 				92A517471A11CC21002FEE93 /* AddFriendViewController.swift */,
+				2E63D0481A3A91B8001BEA99 /* ProfileViewController.swift */,
 				92A517491A11CC2E002FEE93 /* AddGroupViewController.swift */,
 				92A5174F1A11EA67002FEE93 /* ProfileFriendsViewController.swift */,
 				92A517511A11EA7D002FEE93 /* ProfileGroupsViewController.swift */,
@@ -119,6 +126,8 @@
 				92A517531A11ED09002FEE93 /* GroupFriendModel.swift */,
 				92A517551A11FF0A002FEE93 /* TempNaviViewController.swift */,
 				92E1A3A51A3A4B5200FFA902 /* AddBillSummaryViewController.swift */,
+				2E63D03E1A3A6E71001BEA99 /* BillListViewController.swift */,
+				2E63D0421A3A758B001BEA99 /* BillPageViewController.swift */,
 			);
 			path = Money_Tracker_draft2;
 			sourceTree = "<group>";
@@ -254,10 +263,13 @@
 				92A517541A11ED09002FEE93 /* GroupFriendModel.swift in Sources */,
 				92A517501A11EA67002FEE93 /* ProfileFriendsViewController.swift in Sources */,
 				92D52E561A116C2E002D8F81 /* ViewController.swift in Sources */,
+				2E63D0431A3A758B001BEA99 /* BillPageViewController.swift in Sources */,
+				2E63D0491A3A91B8001BEA99 /* ProfileViewController.swift in Sources */,
 				2E63D03B1A3A3FF6001BEA99 /* AddBillGroupSelectionViewController.swift in Sources */,
 				92D52E761A11A1AD002D8F81 /* AnalysisTableViewController.swift in Sources */,
 				92A5174A1A11CC2E002FEE93 /* AddGroupViewController.swift in Sources */,
 				92D52E541A116C2E002D8F81 /* Money_Tracker_draft2.xcdatamodeld in Sources */,
+				2E63D03F1A3A6E71001BEA99 /* BillListViewController.swift in Sources */,
 				92E1A3A61A3A4B5200FFA902 /* AddBillSummaryViewController.swift in Sources */,
 				92D52E741A117EAE002D8F81 /* CameraInputViewController.swift in Sources */,
 				92A517521A11EA7D002FEE93 /* ProfileGroupsViewController.swift in Sources */,
