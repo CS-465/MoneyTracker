@@ -11,6 +11,8 @@
 		2E63D03F1A3A6E71001BEA99 /* BillListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E63D03E1A3A6E71001BEA99 /* BillListViewController.swift */; };
 		2E63D0431A3A758B001BEA99 /* BillPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E63D0421A3A758B001BEA99 /* BillPageViewController.swift */; };
 		2E63D0491A3A91B8001BEA99 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E63D0481A3A91B8001BEA99 /* ProfileViewController.swift */; };
+		2E63D04B1A3A9C06001BEA99 /* SelectCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E63D04A1A3A9C06001BEA99 /* SelectCategoryViewController.swift */; };
+		2E63D04D1A3AAFF9001BEA99 /* AddMemberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E63D04C1A3AAFF9001BEA99 /* AddMemberViewController.swift */; };
 		92A517481A11CC21002FEE93 /* AddFriendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A517471A11CC21002FEE93 /* AddFriendViewController.swift */; };
 		92A5174A1A11CC2E002FEE93 /* AddGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A517491A11CC2E002FEE93 /* AddGroupViewController.swift */; };
 		92A517501A11EA67002FEE93 /* ProfileFriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A5174F1A11EA67002FEE93 /* ProfileFriendsViewController.swift */; };
@@ -45,6 +47,8 @@
 		2E63D03E1A3A6E71001BEA99 /* BillListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BillListViewController.swift; sourceTree = "<group>"; };
 		2E63D0421A3A758B001BEA99 /* BillPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BillPageViewController.swift; path = ../BillPageViewController.swift; sourceTree = "<group>"; };
 		2E63D0481A3A91B8001BEA99 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		2E63D04A1A3A9C06001BEA99 /* SelectCategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectCategoryViewController.swift; sourceTree = "<group>"; };
+		2E63D04C1A3AAFF9001BEA99 /* AddMemberViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddMemberViewController.swift; sourceTree = "<group>"; };
 		92A517471A11CC21002FEE93 /* AddFriendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddFriendViewController.swift; sourceTree = "<group>"; };
 		92A517491A11CC2E002FEE93 /* AddGroupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddGroupViewController.swift; sourceTree = "<group>"; };
 		92A5174F1A11EA67002FEE93 /* ProfileFriendsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileFriendsViewController.swift; sourceTree = "<group>"; };
@@ -117,9 +121,11 @@
 				92D52E731A117EAE002D8F81 /* CameraInputViewController.swift */,
 				92D52E751A11A1AD002D8F81 /* AnalysisTableViewController.swift */,
 				92D52E771A11B47A002D8F81 /* InputBillViewController.swift */,
+				2E63D04A1A3A9C06001BEA99 /* SelectCategoryViewController.swift */,
 				92A517471A11CC21002FEE93 /* AddFriendViewController.swift */,
 				2E63D0481A3A91B8001BEA99 /* ProfileViewController.swift */,
 				92A517491A11CC2E002FEE93 /* AddGroupViewController.swift */,
+				2E63D04C1A3AAFF9001BEA99 /* AddMemberViewController.swift */,
 				92A5174F1A11EA67002FEE93 /* ProfileFriendsViewController.swift */,
 				92A517511A11EA7D002FEE93 /* ProfileGroupsViewController.swift */,
 				2E63D03A1A3A3FF6001BEA99 /* AddBillGroupSelectionViewController.swift */,
@@ -257,7 +263,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E63D04B1A3A9C06001BEA99 /* SelectCategoryViewController.swift in Sources */,
 				92D52E781A11B47A002D8F81 /* InputBillViewController.swift in Sources */,
+				2E63D04D1A3AAFF9001BEA99 /* AddMemberViewController.swift in Sources */,
 				92A517481A11CC21002FEE93 /* AddFriendViewController.swift in Sources */,
 				92A517561A11FF0A002FEE93 /* TempNaviViewController.swift in Sources */,
 				92A517541A11ED09002FEE93 /* GroupFriendModel.swift in Sources */,

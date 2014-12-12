@@ -12,10 +12,11 @@ class InputBillViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var Name : UITextField!
     @IBOutlet weak var Total : UITextField!
+    @IBOutlet weak var categoryButton: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        categoryButton.setImage(UIImage(named: images[billnew.CategoryIndex]), forState: .Normal)
         // Do any additional setup after loading the view.
 //        Name.delegate = self
 //        Total.delegate = self

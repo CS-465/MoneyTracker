@@ -13,8 +13,11 @@ var billList:BillModel = BillModel()
 
 var username = "Cory Larson"
 
+var groupNew = Group(Name:"new",numOfPeople:1,peopleList:[People(Name:"cory",Balance:0)])
 
 var images=["food_30.png","clothes_30.png","grocery_30.png","gas_station_30.png","home_30.png"]
+
+var categoryName = ["food","clothes","grocery","gas","apartment"]
 
 struct Bill {
     var Title:String
@@ -29,12 +32,27 @@ struct People {
     var Balance:Int = 0
 }
 
-struct Group {
+class Group: NSObject {
     var Name:String = "No-name"
     var numOfPeople:Int = 0
-    var peopleList:[People] = []
+    var peopleList = [People]()
+    init(Name:String,numOfPeople:Int,peopleList:[People])
+    {
+        self.Name = Name
+        self.numOfPeople = numOfPeople
+        self.peopleList = peopleList
+    }
+
 }
 
+
+func addpeopleToGroup(group:Group,name:String)
+{
+    var thepeople = People(Name:name,Balance:0)
+    group.peopleList.append(thepeople)
+    group.numOfPeople++
+    
+}
 import UIKit
 
 class BillModel: NSObject {
@@ -80,8 +98,8 @@ class GroupFriendModel: NSObject {
         friendList.append(People(Name: name, Balance: 0))
     }
    
-    func addGroup(name:String, numOfPeople:Int) {
-        groupList.append(Group(Name: name, numOfPeople: numOfPeople, peopleList: []))
+    func addGroup(group: Group) {
+        groupList.append(group)
     }
     
     func addFriendToGroup(nameOfPerson:String, nameOfGroup:String) -> Bool {

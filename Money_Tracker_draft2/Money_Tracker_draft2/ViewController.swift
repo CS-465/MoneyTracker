@@ -17,6 +17,7 @@ class ViewController: UIViewController {
         billList.initBillModel()
         groupFriendInstance1.initFriendList()
         groupFriendInstance1.initGroupList()
+        billnew.CategoryIndex = 0
         // Do any additional setup after loading the view, typically from a nib.
     }
 

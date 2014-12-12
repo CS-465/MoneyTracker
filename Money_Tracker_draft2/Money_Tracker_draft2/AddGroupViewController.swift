@@ -8,34 +8,58 @@
 
 import UIKit
 
-class AddGroupViewController: UIViewController,UITextFieldDelegate {
+class AddGroupViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UIAlertViewDelegate {
 
     @IBOutlet weak var nameGroup: UITextField!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
+    var alerView:UIAlertView = UIAlertView()
+    
+    var alView:UIAlertView = UIAlertView()
+    
+        override func viewDidLoad() {
+            super.viewDidLoad()
+            alerView.title = "Back to previous page!"
+            alerView.message = "Data you inputed will be lost"
+            alerView.delegate = self
+            alerView.addButtonWithTitle("Cancel")
+            alerView.addButtonWithTitle("OK")
+            alView.title = "No Name Inputed"
+            alView.message = "Please Type In Some Name"
+            alView.addButtonWithTitle("OK")
+        
         // Do any additional setup after loading the view.
     }
 
+    func alertView(alertView: UIAlertView, clickedButtonAtIndex buttonIndex: Int) {
+        if(buttonIndex == 1)
+        {
+            self.dismissViewControllerAnimated(true, completion: nil)
+        }
+        else
+        {
+            alertView.hidden = true
+        }
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-    override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
-        self.view.endEditing(true)
-    }
-    
+
     func textFieldShouldReturn(textField: UITextField!) -> Bool {
         nameGroup.resignFirstResponder()
-        
+        groupNew.Name = nameGroup.text
         return true
     }
-    
     @IBAction func btnAddGroup(sender: UIButton) {
-        groupFriendInstance1.addGroup(nameGroup.text, numOfPeople: 0)
+        var nnn: NSString = nameGroup.text
+        if(nnn.isEqualToString(""))
+        {
+            alView.show()
+            return
+        }
         
+        groupFriendInstance1.addGroup(groupNew)
         self.view.endEditing(true)
         nameGroup.text = ""
         
@@ -43,6 +67,43 @@ class AddGroupViewController: UIViewController,UITextFieldDelegate {
             self.dismissViewControllerAnimated(true, completion: nil)
         }
     }
+    
+    @IBAction func backClicked(sender: UIButton) {
+        
+        alerView.show()
+    }
+    
+    @IBAction func CancelClicked(sender: UIButton) {
+        
+        alerView.show()
+    }
+    
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return groupNew.peopleList.count
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell: UITableViewCell = UITableViewCell(style: UITableViewCellStyle.Value1, reuseIdentifier: "group_cell")
+        
+        if(indexPath.row == 0){
+            cell.textLabel!.text = "Myself"
+        }
+        else{
+            cell.textLabel!.text = groupNew.peopleList[indexPath.row].Name
+        }
+        return cell
+    }
+    
+    
+    
+    
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        selectedGroupIndex = indexPath.row
+        
+    }
+    
     
     
     /*
